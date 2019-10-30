@@ -1,0 +1,132 @@
+@import "../utils/variables";
+
+.master-page-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.left-content-container {
+  position: absolute;
+  width: 100%;
+}
+
+.left-content-container.onDetails{
+  left: -100%;
+}
+
+.left-content-container.sliding-left {
+  left: -100%;
+  -webkit-transition: left 300ms linear;
+  -moz-transition: left 300ms linear;
+  transition: left 300ms linear;
+}
+
+.left-content-container.sliding-right {
+  left: 0;
+  -webkit-transition: left 300ms linear;
+  -moz-transition: left 300ms linear;
+  transition: left 300ms linear;
+}
+
+.right-content-container {
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  background: $light;
+}
+.right-content-container.on-list{
+  left: 100%;
+}
+
+
+.right-content-container.sliding-left {
+  left: 0px;
+  -webkit-transition: left 300ms linear;
+  -moz-transition: left 300ms linear;
+  transition: left 300ms linear;
+}
+
+.right-content-container.sliding-right {
+  left: 100%;
+  -webkit-transition: left 300ms linear;
+  -moz-transition: left 300ms linear;
+  transition: left 300ms linear;
+}
+
+.airports-list {
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+}
+
+.airports-list-header {
+  color:#233539;;
+  height: 60px;
+  background: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: $border;
+}
+
+.airport-item-enter {
+  opacity: 0;
+}
+.airport-item-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}
+
+@media screen and (min-width: 769px) {
+  .left-content-container.onDetails{
+    left: 0px;
+  }
+  .left-content-container {
+    width: 500px;
+  }
+  .left-content-container.sliding-left {
+    left: 0px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+  .left-content-container.sliding-right {
+    left: 0px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+
+  .right-content-container.on-list{
+    left: 500px;
+  }
+  .right-content-container {
+    left: 500px;
+    padding: 15px 26px;
+    position: absolute;
+    width: calc(100% - 552px);
+  }
+  .right-content-container.sliding-left {
+    left: 500px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+  .right-content-container.sliding-right {
+    left: 500px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}

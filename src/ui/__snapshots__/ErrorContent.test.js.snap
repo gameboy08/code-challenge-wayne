@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorContent renders correctly 1`] = `
+<div
+  className="error-container"
+>
+  Network error
+  , please go back to
+   
+  <a
+    href="http://localhost:3000/ "
+  >
+    http://localhost:3000/ 
+  </a>
+</div>
+`;

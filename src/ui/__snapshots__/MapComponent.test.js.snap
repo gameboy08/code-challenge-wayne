@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<withScriptjs(withGoogleMap(Component))
+  containerElement={
+    <div
+      style={
+        Object {
+          "height": "400px",
+        }
+      }
+    />
+  }
+  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHudbqXHhHW-wtM_N5wWEOwWbLH3vVm2g&v=3.exp&libraries=geometry,drawing,places"
+  latitude={-17.25}
+  loadingElement={
+    <div
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    />
+  }
+  longitude={-145.3}
+  mapElement={
+    <div
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    />
+  }
+/>
+`;
+
+exports[`MapComponent component 1`] = `
+<withScriptjs(withGoogleMap(Component))
+  containerElement={
+    <div
+      style={
+        Object {
+          "height": "400px",
+        }
+      }
+    />
+  }
+  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHudbqXHhHW-wtM_N5wWEOwWbLH3vVm2g&v=3.exp&libraries=geometry,drawing,places"
+  latitude={-17.25}
+  loadingElement={
+    <div
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    />
+  }
+  longitude={-145.3}
+  mapElement={
+    <div
+      style={
+        Object {
+          "height": "100%",
+        }
+      }
+    />
+  }
+/>
+`;

@@ -1,0 +1,22 @@
+@import "../utils/variables";
+
+.airport-brief-wrapper {
+  background: #ffffff;
+  border: $border;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #233539;
+  margin: 5px auto;
+}
+
+.arrow-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
